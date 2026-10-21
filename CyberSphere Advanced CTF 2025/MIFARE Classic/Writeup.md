@@ -5,17 +5,17 @@
 **Tools Used:** Proxmark3, `mfkey32` / `mf_nonce_brute`, Hex/ASCII Decoder  
 **Target File:** `cybersphere.trace`
 
-## 📝 Challenge Description
+##  Challenge Description
 
 > *"Using a Proxmark, we intercepted the RF chatter of an operative tricking a secure pass into giving up its own secrets. With the outer perimeter breached, the card's broken logic is whispering the remaining locks' weaknesses into the air.                Hint : ISO 14443-A "*
 
-## 🎯 Executive Summary
+##  Executive Summary
 
 This challenge requires analyzing a captured RF trace of a **MIFARE Classic 1K** card communication. The trace captures an active **Nested Authentication Attack**, where an attacker uses one known default key to exploit the card's flawed Pseudo-Random Number Generator (PRNG) and leak the secret keys for the remaining sectors. By cracking these leaked nonces, we reconstruct the custom keys, decrypt the trace, and extract the hidden flag from the card's memory blocks.
 
 ---
 
-## 🛠️ Detailed Solution
+##  Detailed Solution
 
 ### Step 1: Initial Trace Analysis
 
