@@ -1,4 +1,4 @@
-# 📡 CTF Writeup: Echo Nest (Hardware / RF)
+#  CTF Writeup: Echo Nest (Hardware / RF)
 
 **Category:** Hardware / RF Analysis  
 **Difficulty:** Intermediate  
